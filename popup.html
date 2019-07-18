@@ -1,0 +1,28 @@
+  <!DOCTYPE html>
+  <html>
+	<head>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	</head>
+	<style>
+		body
+		{	
+			width:400px;
+		}
+	</style>
+    <body class="container" style="margin-left:10px;margin-right:10px;padding:4px;">
+		Reminder Chrome Extension v1.0 <button type="button" class="btn btn-info btn-xs"id="new" style="float:right">Add New</button><br>
+		<div id="form" style="margin-top:4px;display:none">
+		<input type="text" class="form-control" placeholder="Topic Name" id="tname" style="margin-top:4px;width:370px"></input> <br>
+		<textarea class="form-control" placeholder="Additional Information Related to topic" 
+			id="tdescp" style="margin-top:4px;width:370px"></textarea> <br>
+		<button type="button" class="btn btn-default btn-xs" id="Add" style="margin-top:4px">Add</button> 
+		<button type="button" class="btn btn-warning btn-xs" id="Cancel" style="margin-top:4px">Cancel</button> <br>
+		</div>
+		<div style="margin-left:20px;margin-top:4px;" class="panel-group" id="main">
+		</div>
+    </body>
+	<script type="text/javascript" src="popup.js">
+	</script>
+  </html>

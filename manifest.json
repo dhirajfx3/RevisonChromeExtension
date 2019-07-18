@@ -1,0 +1,16 @@
+  {
+    "name": "Reminder Chrome Extension",
+    "version": "1.0",
+    "description": "Build an Extension!",
+	"permissions": ["declarativeContent","storage"],
+	"browser_action": {
+
+          "default_title": "Reminder Extension",      // optional; shown in tooltip
+          "default_popup": "popup.html"        // optional
+        },
+	"background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "manifest_version": 2
+  }
